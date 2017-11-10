@@ -14,8 +14,8 @@ For convenince, I have configure an runnable nodejs container as `Dockerfile` fo
 
 ### Set up the nodejs container [Optional]  
 1. Install `docker`   
-2. Download the `Dockerfile` and `bootstrap.sh` in the repository in some directory, says `~/Workspaces` you like   
-3. Build the container by running in the `~/Workspaces`      
+2. Download the `Dockerfile` and `bootstrap.sh` in the repository in some directory, says `~/hello` you like   
+3. Build the container by running in the `~/hello`      
 ```base
 docker build -t nodejs:lj .
 ```  
@@ -24,7 +24,7 @@ docker build -t nodejs:lj .
 ```
 ./bootstrap
 ```  
-After all above, you should get in a nodejs container with `nodejs` installed, and your current working directory in the host machine will be mounted to the `~/Workspaces` directory in the container. Go ahead and play with it~  
+After all above, you should get in a nodejs container with `nodejs` installed, and your current working directory in the host machine will be mounted to the `~/Workspaces` directory (set by the value of flag `-v` in `bootstrap.sh`) in the container. Go ahead and play with it~  
 
 <a name="chapter01"></a>
 ## Chapter 01: Your First Application  
