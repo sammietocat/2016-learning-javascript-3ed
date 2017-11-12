@@ -2,6 +2,7 @@
 # JetBrain
 .idea/
 cmake-build-debug/
+CMakeLists.txt
 
 # npm debugging logs  
 npm-debug.log*

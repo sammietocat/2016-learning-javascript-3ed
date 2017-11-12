@@ -17,7 +17,7 @@ For convenince, I have configure an runnable nodejs container as `Dockerfile` fo
 2. Download the `Dockerfile` and `bootstrap.sh` in the repository in some directory, says `~/hello` you like   
 3. Build the container by running in the `~/hello`      
 ```base
-docker build -t nodejs:lj .
+docker build -t node:lj .
 ```  
 4. Add the executable permission to script `bootstrap.sh` if necessary   
 5. Run   
