@@ -33,5 +33,6 @@ After all above, you should get in a nodejs container with `nodejs` installed, a
 ## Chapter 02: JavaScript Development Tools  
 In this chapter, we're learning about Git and other develop tools.  
 
-## Work in Progress  
-+ `Drawing Graphics Primitive` in chapter01  
+## Progress  
++ [x] Chapter01 Your First Application  
++ [ ] Chapter02 JavaScript Development Tools  
