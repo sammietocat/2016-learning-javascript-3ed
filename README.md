@@ -12,7 +12,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 ## Foreword  
 For convenince, I have configure an runnable nodejs container as `Dockerfile` for those faimilar with docker. **This is an optional configuration to run the codes in the book!**.
 
-### Set up the nodejs container [Optional]  
+### Set up the Node container [Optional]  
 1. Install `docker`   
 2. Download the `Dockerfile` and `bootstrap.sh` in the repository in some directory, says `~/hello` you like   
 3. Build the container by running in the `~/hello`      
@@ -24,15 +24,32 @@ docker build -t node:lj .
 ```
 ./bootstrap
 ```  
-After all above, you should get in a nodejs container with `nodejs` installed, and your current working directory in the host machine will be mounted to the `~/Workspaces` directory (set by the value of flag `-v` in `bootstrap.sh`) in the container. Go ahead and play with it~  
+After all above, you should get in a Node image tagged as `nodejs:9.1` installed, and as specified in `bootstrap.sh`   
++ your current working directory in the host machine will be mounted to the `/home/node/app` directory (set by flag `-v`) in the container. 
++ port 3000 in host will mapped port 3000 in container  
++ you will run as a user named `node` in the container with your working directory being `/home/node/app`  
++ the container will be removed once exit  
+Go ahead and play with it~  
 
 <a name="chapter01"></a>
 ## Chapter 01: Your First Application  
 
 <a name="chapter02"></a>
 ## Chapter 02: JavaScript Development Tools  
-In this chapter, we're learning about Git and other develop tools.  
+Recommended tools are  
++ git: version control   
++ terminal   
++ npm: package management by means of Node   
+  - 2 levels: global and local  
+  - global packages are usually command-line tools   
+  - local packages are project specific  
+  - package installation by `npm istall`  
+  - dependencies called module of the project are recorded in `package.json` in the project root  
+  - 2 kinds of dependencies: regular and dev, where dev isn't necessary for running the app  
+  - `npm install` with flag `--save`/`--saveDev` to add dep record to `package.json`  
++ babel: transcompilers to translate ES6 to ES5  
++ linter: static syntax checker  
 
 ## Progress  
 + [x] Chapter01 Your First Application  
-+ [ ] Chapter02 JavaScript Development Tools  
++ [x] Chapter02 JavaScript Development Tools  
