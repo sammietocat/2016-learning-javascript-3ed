@@ -10,7 +10,7 @@
  constant | variable   
 ----------|----------  
  no accidentally change | loop control  
- | value needs changing over time  
+ |  | value needs changing over time  
 
 ## Identifier Names  
 ### naming rules  
@@ -70,6 +70,7 @@ string literals are represented with single quotes, double quotes or backticks
 + escape quotation marks with a backslash (\)  
 #### Special Characters  
 nonprintable chars  
+
 Code | Description   
 -----|------------  
 \n | newline  
