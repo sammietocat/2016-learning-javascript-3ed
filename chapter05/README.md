@@ -19,7 +19,7 @@ operator | description | example
 /        | Division | 3/2 //1
 \*        | Multiplication | 3*2 //6
 %        | Remainder | 3%2 //1
--        | Unary negation | -x // negative x; if x is 5, -x will be -5
+\-        | Unary negation | -x // negative x; if x is 5, -x will be -5
 \+        | Unary plus | // if x is not a number, this will attempt conversion
 \++       | Pre-increment | ++x // increments x by one, and evaluates to the new value
 \++       | Post-increment | x++ // increments x by one, and evaluates to value of x before the increment
