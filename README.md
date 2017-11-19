@@ -8,6 +8,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter 01: Your First Application](chapter01/README.md)    
 + [Chapter 02: JavaScript Development Tools](chapter02/README.md)    
 + [Chapter 03: Literals, Variables, Constants, and Data Types](chapter03/README.md)    
++ [Chapter04. Control Flow](chapter04/README.md)    
 
 <a name="foreword"></a>
 ## Foreword  
@@ -37,3 +38,4 @@ Go ahead and play with it~
 + [x] Chapter01. Your First Application  
 + [x] Chapter02. JavaScript Development Tools  
 + [x] Chapter03. Literals, Variables, Constants, and Data Types  
++ [ ] Chapter04. Control Flow  

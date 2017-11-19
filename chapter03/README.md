@@ -75,9 +75,9 @@ Code | Description
 -----|------------  
 \n | newline  
 \t | tab   
-\' | single quote  
-\" | double quote  
-\$ | dollar sign  
+\\' | single quote  
+\\" | double quote  
+\\$ | dollar sign  
 \uXXXX | arbitary unicode code point   
 #### Template Strings  
 ##### Old way to make string: string concatenation  
