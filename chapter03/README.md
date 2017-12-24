@@ -7,6 +7,7 @@
 + a *constant* holds a value and is unchangeable after initialization  
 + *constant* are named with all uppercase letters and underscores conventionally  
 + variables vs constants   
+
  constant | variable   
 ----------|----------  
  no accidentally change | loop control  
@@ -15,7 +16,7 @@
 ## Identifier Names  
 ### naming rules  
 + start with letters/$/underscore(\_)  
-+ consists of letters/$/underscore  
++ consists of letters/$/underscore/numbers  
 + unicode chars is allowed  
 + non-reserved word  
 ### convention  
@@ -24,7 +25,7 @@
 + addons  
   - no starting with capital letter except for classes  
   - usually, starting with 1 or 2 underscores means special or "internal" variables  
-  - starting with $ means jQuery-wrapped objects if jQuery is in use  
+  - starting with `$` means jQuery-wrapped objects if jQuery is in use  
 
 ## Literals  
 *Def*: value provided directly in program  
@@ -57,7 +58,7 @@ built-in object types are
 + numbers are necessarily approximations  
 + only one numberic data type  
 + 4 numeric literals: decimal, binary, octal and hexadecimal  
-+ special values as placeholders: `Infinity`, `Nan` (not a number)  
++ special values as placeholders: `Infinity`, `NaN` (not a number)  
 + examples of useful properties of `Number` object  
   - `Number.EPSILON`: the smallest value that can be added to 1 to get a distinct number  
   - `Number.MAX_SAFE_INTEGER`: the largest representable integer  
@@ -67,7 +68,7 @@ simply unicode text data.
 string literals are represented with single quotes, double quotes or backticks  
 #### Escaping  
 + double/single quotes within single/double quotes  
-+ escape quotation marks with a backslash (\)  
++ escape quotation marks with a backslash (\\)  
 #### Special Characters  
 nonprintable chars  
 
@@ -98,14 +99,15 @@ way 2 as
 const multiline = `line1
 line2`
 ```
-with both ways, any indentation at the beginning of the line will be included.  
+> with both ways, any indentation at the beginning of the line will be included.  
 Recommended way: string concatenation  
 #### Numbers as Strings  
 numbers in quotation marks ain't number  
 ### Booleans  
 JS allows any valu to considered as "truthy" or "falsy".  
 ### Symbols  
-represents unique tokens  
++ represents unique tokens  
++ created with `Symbol([description])`  
 ### `null` and `undefined`  
 represent something that doesn't exist  
 **The general rule of thumb** is   
@@ -113,20 +115,22 @@ represent something that doesn't exist
 + `undefined` reserved for JS, to indicate that something hasn’t been given a value yet  
 ### Objects  
 + a *constainer* whose contents can be changed over time  
-+ a literal syntax: curly braces ({ and }), a empty object goes as     
++ a literal syntax: curly braces (`{` and `}`), a empty object goes as     
 ```javascript
 const obj = {};
 ```
 + contents of an object are called **properties** (or members)  
 + properties consist of `(name,value)` pairs  
 + property names must be strings or symbols, and values can be any type (including other objects)  
-+ member access with *member access operator* `.` for valid identifier, and *computed member access operator* `[]` otherwise (e.g. property name is a string)  
++ member access with  
+  - *member access operator* `.` for valid identifier  
+  - *computed member access operator* `[]` otherwise (e.g. property name is a string)  
 + symbol properties are handled differently and are hidden by default  
 + Inside the curly braces, properties are separated by commas, and the name and value are separated by a colon   
 + delete a property from an object with the `delete` operator  
 #### Number, String, and Boolean Objects  
 serve 2 purposes  
-+ store special values (such as Number.INFINITY)  
++ store special values (such as `Number.INFINITY`)  
 + provide functionality in the form of function  
 #### Arrays  
 + contents are order naturally, and keys are numeric and sequential  
@@ -136,14 +140,14 @@ serve 2 purposes
   - zero-based  
 + use square brackets to create array, with the elements of the array separated by commas  
 + member access by the numeric index of elements inside square brackets  
-#### Trailing Commas in Objects and Arrays is ok  
+> Trailing Commas in Objects and Arrays is ok  
 #### Dates  
 #### Regular Expressions  
 #### Map and Sets  
 ### Type Conversion  
 #### to Numbers  
 + `Number` object constructor  
-+ built-in `parseInt`/`parseFloat`  
++ built-in `parseInt`/`parseFloat` with an optional radix (default as 10)  
 #### to String  
 `toString()` method  
 #### to Boolean  
