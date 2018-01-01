@@ -155,3 +155,9 @@ console.log(typeof Es6Car)
 + use the name of the class is preferred over `this`   
 
 demo as `oop/static-methods.js`
+
+### Inheritance  
++ The method requested will search from bottom up in the *prototype chain* of the object until it's found. And error out if NOT FOUND.   
++ Inheritance is used to build class hierarchies  
+  - `class A extend B` signals class `A` is a subclass of `B`    
+  - `super()` method invoke the the superclass's constructor  
