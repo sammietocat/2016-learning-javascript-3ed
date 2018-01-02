@@ -161,3 +161,23 @@ demo as `oop/static-methods.js`
 + Inheritance is used to build class hierarchies  
   - `class A extend B` signals class `A` is a subclass of `B`    
   - `super()` method invoke the the superclass's constructor  
+
+### Polymorphism  
++ `instanceof` operator tells you if an object is an instance of a given class   
+
+### Enumerating Object Properties, Revisited  
++ For an object `obj` and a property `x`, `obj.hasOwnProperty(x)` will return `true` if `obj` has the property `x`, and `false` if the property isn't defined or is defined in the prototype chain  
++ prefer `Object.keys`  
+
+### String Representation   
+`toString` provides a default string representation of an object  
+
+## Multiple Inheritance, Mixins, and Interfaces   
++ `mixin`: the primary mechanism for the problem of multiple inheritance   
++ mixin class for every instance of a class by adding function to its prototype  (c.f. `mixin/mixin.js`)  
++ `mixin` won't eliminate the problem of collisions  
+  - same function name in the mixin will break existing class  
+  - `instanceof` doesn't work to check if a class is of specific mixin type  
+  - mixin functionality for class by using symbols as key for properties. Since symbols are unique, this ensures that the mixin will never interfere with the functionality of the existing class   
+
+> **duck typing**: assert object type by its methods  
