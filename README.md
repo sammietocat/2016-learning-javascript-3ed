@@ -11,6 +11,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter04. Control Flow](chapter04/README.md)    
 + [Chapter05. Expressions and Operators](chapter05/README.md)  
 + [Chapter09. Objects and Object-Oriented Programming](chapter09-oop/README.md)  
++ [Chapter10. Maps and Sets](chapter11-map-set/README.md)  
 + [Chapter11. Exceptions and Error Handling](chapter11-exception-err/README.md)  
 + [Chapter12. Iterator and Generator](chapter10-itr-gen/README.md)  
 
@@ -45,5 +46,6 @@ Go ahead and play with it~
 + [ ] Chapter04. Control Flow  
 + [ ] Chapter05. Expressions and Operators  
 + [x] Chapter09. Objects and Object-Oriented Programming  
++ [x] Chapter10. Maps and Sets  
 + [x] Chapter11. Exceptions and Error Handling  
 + [x] Chapter12. Iterator and Generator  
