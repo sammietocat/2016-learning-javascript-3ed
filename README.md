@@ -10,6 +10,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter 03: Literals, Variables, Constants, and Data Types](chapter03/README.md)    
 + [Chapter04. Control Flow](chapter04/README.md)    
 + [Chapter05. Expressions and Operators](chapter05/README.md)  
++ [Chapter06. Functions](chapter06/README.md)  
 + [Chapter09. Objects and Object-Oriented Programming](chapter09-oop/README.md)  
 + [Chapter10. Maps and Sets](chapter11-map-set/README.md)  
 + [Chapter11. Exceptions and Error Handling](chapter11-exception-err/README.md)  
@@ -45,6 +46,7 @@ Go ahead and play with it~
 + [x] Chapter03. Literals, Variables, Constants, and Data Types  
 + [ ] Chapter04. Control Flow  
 + [ ] Chapter05. Expressions and Operators  
++ [x] Chapter06. Functions  
 + [x] Chapter09. Objects and Object-Oriented Programming  
 + [x] Chapter10. Maps and Sets  
 + [x] Chapter11. Exceptions and Error Handling  
