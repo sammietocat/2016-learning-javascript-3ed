@@ -5,12 +5,13 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 
 ## Contents  
 + [Foreword](#foreword)  
-+ [Chapter 01: Your First Application](chapter01/README.md)    
-+ [Chapter 02: JavaScript Development Tools](chapter02/README.md)    
++ [Chapter 01: Your First Application](chapter01-your-first-app/README.md)    
++ [Chapter 02: JavaScript Development Tools](chapter02-dev-tools/README.md)    
 + [Chapter 03: Literals, Variables, Constants, and Data Types](chapter03/README.md)    
 + [Chapter04. Control Flow](chapter04/README.md)    
 + [Chapter05. Expressions and Operators](chapter05/README.md)  
-+ [Chapter09. Objects and Object-Oriented Programming](chapter09/README.md)  
++ [Chapter09. Objects and Object-Oriented Programming](chapter09-oop/README.md)  
++ [Chapter10. Iterator and Generator](chapter10-itr-gen/README.md)  
 
 <a name="foreword"></a>
 ## Foreword  
@@ -42,4 +43,5 @@ Go ahead and play with it~
 + [x] Chapter03. Literals, Variables, Constants, and Data Types  
 + [ ] Chapter04. Control Flow  
 + [ ] Chapter05. Expressions and Operators  
-+ [ ] Chapter09. Objects and Object-Oriented Programming  
++ [x] Chapter09. Objects and Object-Oriented Programming  
++ [x] Chapter10. Iterator and Generator  
