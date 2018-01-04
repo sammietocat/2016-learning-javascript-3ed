@@ -12,10 +12,12 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter05. Expressions and Operators](chapter05/README.md)  
 + [Chapter06. Functions](chapter06-functions/README.md)  
 + [Chapter07. Scope](chapter07-scope/README.md)  
++ [Chapter08. Arrays and Array Processing](chapter08-arr-process/README.md)  
 + [Chapter09. Objects and Object-Oriented Programming](chapter09-oop/README.md)  
 + [Chapter10. Maps and Sets](chapter11-map-set/README.md)  
 + [Chapter11. Exceptions and Error Handling](chapter11-exception-err/README.md)  
 + [Chapter12. Iterator and Generator](chapter10-itr-gen/README.md)  
++ [Functions and the Power of Abstract Thinking](chapter13-functional-thinking/README.md)  
 
 <a name="foreword"></a>
 ## Foreword  
@@ -49,7 +51,9 @@ Go ahead and play with it~
 + [ ] Chapter05. Expressions and Operators  
 + [x] Chapter06. Functions  
 + [x] Chapter07. Scope  
++ [x] Chapter08. Arrays and Array Processing  
 + [x] Chapter09. Objects and Object-Oriented Programming  
 + [x] Chapter10. Maps and Sets  
 + [x] Chapter11. Exceptions and Error Handling  
 + [x] Chapter12. Iterator and Generator  
++ [x] Chapter13. Functions and the Power of Abstract Thinking
