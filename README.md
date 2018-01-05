@@ -19,6 +19,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter12. Iterator and Generator](chapter10-itr-gen/README.md)  
 + [Chapter13. Functions and the Power of Abstract Thinking](chapter13-functional-thinking/README.md)  
 + [Chapter 14. Asynchronous Programming](chapter14-async-programming/README.md)  
++ [Chapter15. Date and Time](chapter15-date-time/README.md)   
 
 <a name="foreword"></a>
 ## Foreword  
@@ -58,4 +59,5 @@ Go ahead and play with it~
 + [x] Chapter11. Exceptions and Error Handling  
 + [x] Chapter12. Iterator and Generator  
 + [x] Chapter13. Functions and the Power of Abstract Thinking
-+ [ ] Chapter 14. Asynchronous Programming  
++ [ ] Chapter14. Asynchronous Programming  
++ [x] Chapter15. Date and Time  
