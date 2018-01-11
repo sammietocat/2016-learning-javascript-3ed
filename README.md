@@ -21,6 +21,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter 14. Asynchronous Programming](chapter14-async-programming/README.md)  
 + [Chapter15. Date and Time](chapter15-date-time/README.md)   
 + [Chapter16. Math](chapter16-math/README.md)  
++ [Chapter17. Regular Expressions](chapter17-regex/README.md)  
 
 <a name="foreword"></a>
 ## Foreword  
@@ -63,3 +64,4 @@ Go ahead and play with it~
 + [ ] Chapter14. Asynchronous Programming  
 + [x] Chapter15. Date and Time  
 + [x] Chapter16. Math  
++ [x] Chapter17. Regular Expressions  
