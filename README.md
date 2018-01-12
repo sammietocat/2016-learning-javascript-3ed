@@ -24,6 +24,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter17. Regular Expressions](chapter17-regex/README.md)  
 + [Chapter18. JavaScript in the Browser](chapter18-js-in-browser/README.md)  
 + [Chapter19. jQuery](chapter19-jquery/README.md)  
++ [Chapter20. Node](chapter20-node/README.md)  
 
 <a name="foreword"></a>
 ## Foreword  
@@ -69,3 +70,4 @@ Go ahead and play with it~
 + [x] Chapter17. Regular Expressions  
 + [x] Chapter18. JavaScript in the Browser  
 + [x] Chapter19. jQuery  
++ [x] Chapter20. Node  
