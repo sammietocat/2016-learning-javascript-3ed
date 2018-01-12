@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ajax Demo</title>
+
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="serverInfo">
+    Server is running on
+    <span data-replace="platform">???</span>
+    with Node
+    <span data-replace="nodeVersion">???</span>. It has been up for
+    <span data-replace="uptime">???</span> seconds.
+  </div>
+
+
+  <script src="jquery-3.2.1.min.js"></script>
+  <script>
+    function refreshServerInfo() {
+      const $serverInfo = $('.serverInfo');
+      $.get('http://localhost:7070').then(
+        // successful return
+        function (data) {
+          Object.keys(data).forEach(p => {
+            $(`[data-replace="${p}"]`).text(data[p]);
+          });
+        },
+        function (jqXHR, textStatus, err) {
+          console.error(err);
+          $serverInfo.addClass('error')
+            .html('Error connecting to server.');
+        }
+      );
+    }
+
+    $(function () {
+      refreshServerInfo();
+    });
+  </script>
+
+</body>
+
+</html>

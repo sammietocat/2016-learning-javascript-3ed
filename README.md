@@ -22,7 +22,8 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter15. Date and Time](chapter15-date-time/README.md)   
 + [Chapter16. Math](chapter16-math/README.md)  
 + [Chapter17. Regular Expressions](chapter17-regex/README.md)  
-+ [JavaScript in the Browser](chapter18-js-in-browser/README.md)  
++ [Chapter18. JavaScript in the Browser](chapter18-js-in-browser/README.md)  
++ [Chapter19. jQuery](chapter19-jquery/README.md)  
 
 <a name="foreword"></a>
 ## Foreword  
@@ -67,3 +68,4 @@ Go ahead and play with it~
 + [x] Chapter16. Math  
 + [x] Chapter17. Regular Expressions  
 + [x] Chapter18. JavaScript in the Browser  
++ [x] Chapter19. jQuery  
