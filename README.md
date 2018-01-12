@@ -25,6 +25,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter18. JavaScript in the Browser](chapter18-js-in-browser/README.md)  
 + [Chapter19. jQuery](chapter19-jquery/README.md)  
 + [Chapter20. Node](chapter20-node/README.md)  
++ [Chapter21. Object Property Configuration and Proxies](chapter21-obj-prop-config-and-proxy/README.md)  
 
 <a name="foreword"></a>
 ## Foreword  
@@ -71,3 +72,4 @@ Go ahead and play with it~
 + [x] Chapter18. JavaScript in the Browser  
 + [x] Chapter19. jQuery  
 + [x] Chapter20. Node  
++ [x] Chapter21. Object Property Configuration and Proxies
