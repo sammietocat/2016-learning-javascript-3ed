@@ -30,13 +30,13 @@
   - starting with `$` means jQuery-wrapped objects if jQuery is in use  
 
 ## Literals  
-> Literals are values provided directly in program  
+> **DEF**: Literals are values provided directly in program  
 ### 2 types  
 + numeric literals (e.g., 22)   
 + string literal (e.g., "hello")  
 > literals (except for number) have **quotation marks**, but not for identifiers  
 ## Primitive Types and Objects  
-values are either *primitive* or *object*  
+values are either *primitives* or *objects*  
 ### 6 primitive types  
 + Number   
 + String  
@@ -46,7 +46,7 @@ values are either *primitive* or *object*
 + Symbol  
 
 primitive types are **immutable**, **which doesn't mean their contents cannot be changed**.
-## objects  
+### objects  
 + used to construct custom data types.  
 + built-in object types are  
   + Array  
@@ -84,12 +84,11 @@ Code | Description
 \uXXXX | arbitary unicode code point   
 #### Template Strings  
 + Old way to make string: string concatenation  
-+ New way: string templates   
-a.k.a, string interpolation, a shorthand way of injecting values into a string, wrapped around by backticks, e.g.,  
++ New way: string templates (a.k.a, string interpolation), a shorthand way of injecting values into a string, wrapped around by backticks, e.g.,  
 ```javascript
 const msg=`hello ${who}`
 ```
-inside a string template, the **dollar sign** becomes special character (you can escape it with a backslash): if it’s followed by **a value** (here, value of variable `who`) **wrapped in curly braces**, that value is inserted into the string.
+inside a string template, the **dollar sign** becomes special character (you can escape it with a backslash): if it's followed by **a value** (here, value of variable `who`) **wrapped in curly braces**, that value is inserted into the string.
 
 #### Multiline Strings  
 way 1 as  
@@ -110,7 +109,7 @@ with both ways, **any indentation at the beginning of the line will be included*
 numbers in quotation marks ain't number  
 
 ### Booleans  
-JS allows any valu to considered as "truthy" or "falsy".  
+JS allows any value to considered as "truthy" or "falsy".  
 
 ### Symbols  
 + represents unique tokens  
@@ -120,7 +119,7 @@ JS allows any valu to considered as "truthy" or "falsy".
 represent something that doesn't exist  
 **The general rule of thumb** is   
 + `null` for programmers  
-+ `undefined` reserved for JS, to indicate that something hasn’t been given a value yet  
++ `undefined` reserved for JS, to indicate that something hasn't been given a value yet  
 
 ### Objects  
 + a *constainer* whose contents can be changed over time  
