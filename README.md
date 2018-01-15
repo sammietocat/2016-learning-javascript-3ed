@@ -5,7 +5,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 
 ## Contents  
 + [Chapter 01: Your First Application](chapter01/README.md)  
-+ [Chapter 02: JavaScript Development Tools](chapter02-dev-tools/README.md)    
++ [Chapter 02: JavaScript Development Tools](chapter02/README.md)    
 + [Chapter 03: Literals, Variables, Constants, and Data Types](chapter03/README.md)    
 + [Chapter04. Control Flow](chapter04/README.md)    
 + [Chapter05. Expressions and Operators](chapter05/README.md)  
