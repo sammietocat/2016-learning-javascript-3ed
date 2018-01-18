@@ -10,7 +10,7 @@ class Countdown extends EventEmitter {
     const timeoutIds = [];
     return new Promise(function (resolve, reject) {
       for (let i = countdown.seconds; i >= 0; i--) {
-        timeoutIds.push(setTimeout(function () {
+        timeoutIds.push(setTimeout(() => {
           if (countdown.superstitious && i === 13) {
             // clear all pending timeouts 
             timeoutIds.forEach(clearTimeout);
@@ -24,20 +24,11 @@ class Countdown extends EventEmitter {
   }
 }
 
-function launch() {
-  return new Promise(function (resolve, reject) {
-    console.log("Lift off!");
-    setTimeout(function () {
-      resolve("In orbit!");
-    }, 2 * 1000); // a very fast rocket indeed
+const c = new Countdown(15, true)
+  .on('tick', i => {
+    if (i > 0) {
+      console.log(`${i}...`);
+    }
   });
-}
-
-const c = new Countdown(5).on('tick', i => console.log(i + '...'));
-
-c.go().then(launch).then(function (msg) {
-    console.log(msg);
-  })
-  .catch(function (err) {
-    console.error("Houston, we have a problem....");
-  })
+c.go().then(() => console.log('GO!'))
+  .catch(err => console.error(err.message));

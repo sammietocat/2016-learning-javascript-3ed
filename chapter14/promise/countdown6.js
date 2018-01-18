@@ -8,9 +8,9 @@ class Countdown extends EventEmitter {
   go() {
     const countdown = this; // this prevents changing of this in callbacks 
     const timeoutIds = [];
-    return new Promise(function (resolve, reject) {
+    return new Promise((resolve, reject) => {
       for (let i = countdown.seconds; i >= 0; i--) {
-        timeoutIds.push(setTimeout(function () {
+        timeoutIds.push(setTimeout(() => {
           if (countdown.superstitious && i === 13) {
             // clear all pending timeouts 
             timeoutIds.forEach(clearTimeout);
@@ -25,7 +25,7 @@ class Countdown extends EventEmitter {
 }
 
 function launch() {
-  return new Promise(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     if (Math.random() < 0.5) return; // irresponsible rocket failure
     console.log("Lift off!");
     setTimeout(function () {
@@ -37,7 +37,7 @@ function launch() {
 function addTimeout(fn, timeout) {
   if (timeout === undefined) timeout = 1000; // default timeout 
   return function (...args) {
-    return new Promise(function (resolve, reject) {
+    return new Promise((resolve, reject) => {
       const tid = setTimeout(reject, timeout,
         new Error("promise timed out"));
       fn(...args)
@@ -55,9 +55,5 @@ function addTimeout(fn, timeout) {
 const c = new Countdown(5).on('tick', i => console.log(i + '...'));
 
 c.go().then(addTimeout(launch, 4 * 1000))
-  .then(function (msg) {
-    console.log(msg);
-  })
-  .catch(function (err) {
-    console.error("Houston, we have a problem....");
-  })
+  .then(msg => console.log(msg))
+  .catch(err => console.error("Houston, we have a problem...."));
