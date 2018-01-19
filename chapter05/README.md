@@ -41,7 +41,7 @@ abstract equal | 2 values refer to the same object (so far, so good) or if they 
 relational operators | compare values in relation to one another, and they only make sense for data types that have a natural ordering | `<`, `<=`, `>`, `>=`  
 
 ## Comparing numbers  
-+ `NaN` is not equal to anything, including itself (that is, NaN === NaN and NaN == NaN are both false  
++ `NaN` is not equal to anything, including itself (that is, `NaN === NaN` and `NaN == NaN` are both false  
 + `isNaN(x)` will return true if `x` is `NaN` and `false` otherwise  
 + for fractional numbers, check for "closeness" (absolute difference within `Number.EPSILON`) by relational operators  
 
@@ -50,7 +50,7 @@ relational operators | compare values in relation to one another, and they only 
 + JS examines each pair of operands from left to right, and if either operand is a string, it assumes string concatenation  
 
 ## Logical oeprators  
-subject to boolean values (true/false)  
+subject to boolean values (`true`/`false`)  
 ### truthy and falsy values  
 falsy values: `undefined`, `null`, `false`, `0`, `NaN` and `''` (empty string)  
 ### AND, OR and NOT  
@@ -71,7 +71,7 @@ evaluates two expressions and returns the result of the second one, e.g.,
 
 ## Group operator  
 ### Bitwise operators  
-+ Bitwise operators treat their operands as 32-bit signed integers in two’s complement format  
++ Bitwise operators treat their operands as 32-bit signed integers in two's complement format  
 + perform logical operations (AND, OR, NOT, XOR) on every individual bit in an integer  
 ### `typeof` operator  
 + def: returns a string representing the type of its operand  

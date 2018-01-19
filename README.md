@@ -8,7 +8,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter 02: JavaScript Development Tools](chapter02/README.md)    
 + [Chapter 03: Literals, Variables, Constants, and Data Types](chapter03/README.md)    
 + [Chapter 04. Control Flow](chapter04/README.md)    
-+ [Chapter05. Expressions and Operators](chapter05/README.md)  
++ [Chapter 05. Expressions and Operators](chapter05/README.md)  
 + [Chapter06. Functions](chapter06-functions/README.md)  
 + [Chapter07. Scope](chapter07-scope/README.md)  
 + [Chapter08. Arrays and Array Processing](chapter08-arr-process/README.md)  
