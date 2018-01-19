@@ -5,7 +5,7 @@
 a.k.a, *compound statements*: a series of statements enclosed in **curly braces** that is treated by JavaScript as a single unit  
 Note: **a block statement is a statement** too  
 ### Whitespace  
-**should** never mix blocks and single statements in the same `if` statement  
+should **never** mix blocks and single statements in the same `if` statement  
 ### Loop control flow  
 + `while`: repeats code as long as its *condition* is met  
   ```javascript 
@@ -59,7 +59,7 @@ switch(expression) {
     // executed when the result of expression matches valueN
     [break;] 
   default:
-    // executed when none of the values match the value of expression
+    // executed when none of the above values match the value of expression
     [break;] 
 }
 ```
@@ -73,7 +73,7 @@ return     | Exits the current function (regardless of control flow).
 throw      | Indicates an exception that must be caught by an exception handler (even if it’s outside of the current control flow statement).
 
 ## Useful control flow patterns  
-+ `continue` to Reduce Conditional Nesting  
-+ `break` or return to Avoid Unnecessary Computation  
-+ Using Value of Index After Loop Completion  
-+ Using Descending Indexes When Modifying Lists  
++ `continue` to reduce conditional nesting  
++ `break` or `return` to avoid unnecessary computation  
++ using value of index after loop completion  
++ using descending indexes when modifying lists  
