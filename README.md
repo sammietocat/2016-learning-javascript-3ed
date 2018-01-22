@@ -9,7 +9,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter 03: Literals, Variables, Constants, and Data Types](chapter03/README.md)    
 + [Chapter 04. Control Flow](chapter04/README.md)    
 + [Chapter 05. Expressions and Operators](chapter05/README.md)  
-+ [Chapter06. Functions](chapter06-functions/README.md)  
++ [Chapter 06. Functions](chapter06/README.md)  
 + [Chapter07. Scope](chapter07-scope/README.md)  
 + [Chapter08. Arrays and Array Processing](chapter08-arr-process/README.md)  
 + [Chapter09. Objects and Object-Oriented Programming](chapter09-oop/README.md)  
@@ -30,8 +30,8 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [x] Chapter01. Your First Application  
 + [x] Chapter02. JavaScript Development Tools  
 + [x] Chapter03. Literals, Variables, Constants, and Data Types  
-+ [ ] Chapter04. Control Flow  
-+ [ ] Chapter05. Expressions and Operators  
++ [x] Chapter04. Control Flow  
++ [x] Chapter05. Expressions and Operators  
 + [x] Chapter06. Functions  
 + [x] Chapter07. Scope  
 + [x] Chapter08. Arrays and Array Processing  
