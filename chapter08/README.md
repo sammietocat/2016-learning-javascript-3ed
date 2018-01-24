@@ -36,7 +36,7 @@ method  | description | in-place or copy | examples
 `copyWithin(target[, start[, end]])` | Cut and replace within an array | in-place | `content-manipulate/copyWithin.js`
 `fill(value[, start[, end]])`    | Fill an array | in-place  | `content-manipulate/fill.js`
 `reverse` | Reverse an array  | in-place  | `content-manipulate/reverse.js`
-`sort([compareFunction])`   | Sort an array | in-place | `content-manipulate/sort.js`,`content-manipulate/sort02.js`  
+`sort([compareFunction])`   | Sort an array | in-place | `content-manipulate/sort{01,02}.js`  
 
 ## Array Searching 
 
