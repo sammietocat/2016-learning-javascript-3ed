@@ -1,4 +1,4 @@
-# Chapter 01: Your First Application  
+# Chapter 01. Your First Application  
 
 ## Tools  
 + a browser  

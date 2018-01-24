@@ -1,4 +1,4 @@
-# Chapter 03: Literals, Variables, Constants, and Data Types  
+# Chapter 03. Literals, Variables, Constants, and Data Types  
 ## Variables and Constants  
 ### Variables  
 + variables is essentially a named value  

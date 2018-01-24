@@ -11,7 +11,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter 05. Expressions and Operators](chapter05/README.md)  
 + [Chapter 06. Functions](chapter06/README.md)  
 + [Chapter 07. Scope](chapter07/README.md)  
-+ [Chapter08. Arrays and Array Processing](chapter08-arr-process/README.md)  
++ [Chapter 08. Arrays and Array Processing](chapter08/README.md)  
 + [Chapter09. Objects and Object-Oriented Programming](chapter09-oop/README.md)  
 + [Chapter10. Maps and Sets](chapter11-map-set/README.md)  
 + [Chapter11. Exceptions and Error Handling](chapter11-exception-err/README.md)  

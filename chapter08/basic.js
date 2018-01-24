@@ -8,7 +8,7 @@ const arr3 = [
 const arr4 = [{
     name: "Fred",
     type: "object",
-//    luckyNumbers = [5, 7, 13]
+    //    luckyNumbers = [5, 7, 13]
   },
   [{
       name: "Susan",
@@ -39,10 +39,10 @@ console.log(arr4[1].length); // 2
 
 // increasing array size
 arr1[4] = 5;
-console.log(arr1);// [ 1, 2, 3, <1 empty item>, 5 ]
+console.log(arr1); // [ 1, 2, 3, <1 empty item>, 5 ]
 console.log(arr1.length); // 5
 
-// accessing (not assigning) an index larger than the array // does *not* change the size of the array
+// accessing (not assigning) an index larger than the array does *not* change the size of the array
 arr2[10]; // undefined
 console.log(arr2.length); // 3
 

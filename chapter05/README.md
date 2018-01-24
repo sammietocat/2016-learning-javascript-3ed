@@ -1,4 +1,4 @@
-# Chapter05. Expressions and Operators  
+# Chapter 05. Expressions and Operators  
 
 + An expression is a special kind of statement that evaluates to a value.  
 + An assignment is itself an expression  

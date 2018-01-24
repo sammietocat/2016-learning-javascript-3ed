@@ -1,4 +1,4 @@
-# Chapter 02: JavaScript Development Tools  
+# Chapter 02. JavaScript Development Tools  
 + git: version control   
 + terminal   
 + npm: package management by means of Node   
