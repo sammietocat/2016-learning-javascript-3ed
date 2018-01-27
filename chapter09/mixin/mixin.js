@@ -25,5 +25,5 @@ car1.addInsurancePolicy(new InsurancePolicy());
 
 // make every car insurable:
 makeInsurable(Car.prototype);
-const car1 = new Car();
-car1.addInsurancePolicy(new InsurancePolicy());
+const car2 = new Car();
+car2.addInsurancePolicy(new InsurancePolicy());
