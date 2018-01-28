@@ -13,7 +13,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter 07. Scope](chapter07/README.md)  
 + [Chapter 08. Arrays and Array Processing](chapter08/README.md)  
 + [Chapter 09. Objects and Object-Oriented Programming](chapter09/README.md)  
-+ [Chapter10. Maps and Sets](chapter11-map-set/README.md)  
++ [Chapter 10. Maps and Sets](chapter11/README.md)  
 + [Chapter11. Exceptions and Error Handling](chapter11-exception-err/README.md)  
 + [Chapter 12. Iterator and Generator](chapter12/README.md)  
 + [Chapter13. Functions and the Power of Abstract Thinking](chapter13-functional-thinking/README.md)  
@@ -25,26 +25,3 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter19. jQuery](chapter19-jquery/README.md)  
 + [Chapter20. Node](chapter20-node/README.md)  
 + [Chapter21. Object Property Configuration and Proxies](chapter21-obj-prop-config-and-proxy/README.md)  
-
-## Progress  
-+ [x] Chapter01. Your First Application  
-+ [x] Chapter02. JavaScript Development Tools  
-+ [x] Chapter03. Literals, Variables, Constants, and Data Types  
-+ [x] Chapter04. Control Flow  
-+ [x] Chapter05. Expressions and Operators  
-+ [x] Chapter06. Functions  
-+ [x] Chapter07. Scope  
-+ [x] Chapter08. Arrays and Array Processing  
-+ [x] Chapter09. Objects and Object-Oriented Programming  
-+ [x] Chapter10. Maps and Sets  
-+ [x] Chapter11. Exceptions and Error Handling  
-+ [x] Chapter12. Iterator and Generator  
-+ [x] Chapter13. Functions and the Power of Abstract Thinking
-+ [ ] Chapter14. Asynchronous Programming  
-+ [x] Chapter15. Date and Time  
-+ [x] Chapter16. Math  
-+ [x] Chapter17. Regular Expressions  
-+ [x] Chapter18. JavaScript in the Browser  
-+ [x] Chapter19. jQuery  
-+ [x] Chapter20. Node  
-+ [x] Chapter21. Object Property Configuration and Proxies
