@@ -28,8 +28,8 @@ All `Array.prototype` methods that take a function also take an (optional) value
 
 method  | description | in-place or copy | examples
 --------|-------------|------------------|---------
-`push`(returns new length), `pop` | Create a stack (LIFO) | in-place | `content-manipulate/ppus.js` 
-`unshift`(returns new length), `shift` | Create a queue (FIFO) | in-place | `content-manipulate/ppus.js`
+`push`(returns new length), `pop` | append/remove the tailing element | in-place | `content-manipulate/ppus.js` 
+`unshift`(returns new length), `shift` | add/remove the 1st element | in-place | `content-manipulate/ppus.js`
 `concat(value1[, value2[, ...[, valueN]]])`  | Add multiple elements at end |  copy  | `content-manipulate/concat.js` 
 `slice([begin[, end]])`   | Get subarray | copy | `slice.js`
 `splice(start[, deleteCount[, item1[, item2[, ...]]]])`  | Add or remove elements at any position | in-place | `content-manipulate/splice.js`

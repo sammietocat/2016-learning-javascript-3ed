@@ -16,7 +16,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter 10. Maps and Sets](chapter10/README.md)  
 + [Chapter 11. Exceptions and Error Handling](chapter11/README.md)  
 + [Chapter 12. Iterator and Generator](chapter12/README.md)  
-+ [Chapter13. Functions and the Power of Abstract Thinking](chapter13-functional-thinking/README.md)  
++ [Chapter 13. Functions and the Power of Abstract Thinking](chapter13/README.md)  
 + [Chapter 14. Asynchronous Programming](chapter14/README.md)  
 + [Chapter15. Date and Time](chapter15-date-time/README.md)   
 + [Chapter16. Math](chapter16-math/README.md)  

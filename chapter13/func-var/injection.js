@@ -1,5 +1,6 @@
 function sum(arr, f) {
-  // if no function is supplied, use a "null function" that // simply returns its argument unmodified
+  // if no function is supplied, use a "null function" that 
+  // simply returns its argument unmodified
   if (typeof f != 'function') {
     f = x => x;
   }
