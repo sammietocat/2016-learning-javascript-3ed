@@ -14,7 +14,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter 08. Arrays and Array Processing](chapter08/README.md)  
 + [Chapter 09. Objects and Object-Oriented Programming](chapter09/README.md)  
 + [Chapter 10. Maps and Sets](chapter10/README.md)  
-+ [Chapter11. Exceptions and Error Handling](chapter11-exception-err/README.md)  
++ [Chapter 11. Exceptions and Error Handling](chapter11/README.md)  
 + [Chapter 12. Iterator and Generator](chapter12/README.md)  
 + [Chapter13. Functions and the Power of Abstract Thinking](chapter13-functional-thinking/README.md)  
 + [Chapter 14. Asynchronous Programming](chapter14/README.md)  

@@ -1,6 +1,8 @@
+const utils = require('./utils');
+
 const email = null; // whoops
 try {
-  const validatedEmail = validateEmail(email);
+  const validatedEmail = utils.validateEmail(email);
   if (validatedEmail instanceof Error) {
     console.error(`Error: ${validatedEmail.message}`);
   } else {
