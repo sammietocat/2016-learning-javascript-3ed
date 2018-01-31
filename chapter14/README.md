@@ -2,9 +2,9 @@
 
 + JavaScript application runs **single-threaded**, which only ever does one thing at a time  
 + 3 distinct eras of asynchronous support  
-  + the callback  
-  + the promise  
-  + the generator  
+  + callback  
+  + promise  
+  + generator  
 + 3 use cases  
   - Network requests (Ajax calls, for instance)  
   - Filesystem operations (reading/writing files, etc.)  
@@ -15,16 +15,16 @@
 > **Def**: A callback is simply a function that will be invoked at some point in the future  
 
 The whole point of asynchronous execution is that **it doesn't block anything**    
-### setTimeout, setInterval and clearInterval
+### `setTimeout`, `setInterval` and `clearInterval`
 
 method | description
 ------:|:-----------
 `setTimeout`  | delays execution some number of milliseconds (see `callback/setTimeout.js`)
-`setInterval` | runs the callback at the specified interval forever, or until you call clearInterval (see `callback/setInterval.js`)
+`setInterval` | runs the callback at the specified interval forever, or until you call `clearInterval` (see `callback/setInterval.js`)
 `clearInterval` | cancel events triggered by `setInterval` 
 
 ### Scope and Asynchronous Execution  
-+ Be mindful of the scope your callbacks are declared in: **they will have access to everything in that scope (closure)** (see `callback/countdown.js`)   
++ Be mindful of the scope your callbacks are declared in: **they will have access to everything in that scope (closure)** (see `callback/countdown1.js`)   
 + solve the potential problem by scoping using `let` (demo as `callback/countdown2.js`)
 
 ### Error-First Callbacks  
@@ -33,8 +33,8 @@ method | description
 + **don't forget to return after checking/logging the error if wanted**   
 
 ### Callback Hell  
-+ deep nesting of code blocks (demo as `callback/cb-hell.js`)  
-+ error handling is problematic: `try...catch` blocks only checks for error in the same function, but not the nested ones (demo as `callback/cb-hello1.js`)  
++ deep nesting of code blocks (demo as `callback/cb-hell1.js`)  
++ error handling is problematic: `try...catch` blocks only checks for error in the same function, but not the nested ones (demo as `callback/cb-hell2.js`)  
 + nothing to prevent your callback from accidentally getting called twice or not at all    
 
 ## Promises  
@@ -43,7 +43,7 @@ method | description
 + Another convenient advantage of promises over callbacks is that, because they're just objects, they can be passed around   
 
 ### Creation  
-+ A new `Promise` instance is created with a function (as argument) that has `resolve` (fulfill) and `reject` callbacks (see `promise/countdown.js`)   
++ a new `Promise` instance is created with a function (as argument) that has `resolve` (fulfill) and `reject` callbacks (see `promise/countdown1.js`)   
 + only the first calling of `resolve`/`reject` counts  
 
 ### Using  
@@ -81,5 +81,5 @@ method | description
 [the co genertor runner](https://github.com/tj/co)  
 
 ### Exception Handling in Generator Runners  
-Another important benefit of generator runners is that they enable exception han‐ dling with `try/catch` (demo as `generator/theFutureIsNow3.js`)  
+Another important benefit of generator runners is that they enable exception handling with `try/catch` (demo as `generator/theFutureIsNow3.js`)  
 

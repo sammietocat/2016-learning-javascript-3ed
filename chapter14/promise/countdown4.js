@@ -1,4 +1,5 @@
 const EventEmitter = require('events').EventEmitter;
+
 class Countdown extends EventEmitter {
   constructor(seconds, superstitious) {
     super();

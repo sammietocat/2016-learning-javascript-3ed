@@ -31,8 +31,8 @@ function launch() {
   });
 }
 
-//const c = new Countdown(5).on('tick', i => console.log(i + '...'));
-const c = new Countdown(15, true).on('tick', i => console.log(i + '...'));
+const c = new Countdown(5).on('tick', i => console.log(i + '...'));
+//const c = new Countdown(15, true).on('tick', i => console.log(i + '...'));
 
 c.go().then(launch).then(msg => console.log(msg))
   .catch(err => console.error("Houston, we have a problem...."));
