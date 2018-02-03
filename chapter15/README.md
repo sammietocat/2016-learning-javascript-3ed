@@ -3,23 +3,24 @@
 > A date without a time is implicitly 12:00 A.M. on that day.  
 
 ## Dates, Time Zones, Timestamps, and the Unix Epoch  
-+ Dates and times—as represented by seconds since **January 1, 1970, 00:00:00 UTC**  
++ Dates and times — as represented by seconds since **January 1, 1970, 00:00:00 UTC**  
 + All time zones are defined as offsets from Coordinated Universal Time (abbreviated UTC, a.k.a. Greenwich Mean Time (GMT))  
 + All `Date` instances are stored as a single number: the number of **milliseconds** (not seconds) since the Unix Epoch  
 
 ## Constructing Date Objects  
 4 ways as  
 
-arguments | description  
----------:|:-----------
-none      | current date 
-millisecond | w.r.t Unix Epoch
-string    | formatted string to parse  
+arguments     | description  
+-------------:|:-----------------------------
+none          | current date 
+millisecond   | w.r.t Unix Epoch
+string        | formatted string to parse  
 negative date | to get date before Unix Epoch 
 
-all parameters fed into the constructor are taken as local time
+**all parameters fed into the constructor are taken as local time**
 
 ## Moment.js  
++ a date library  
 + install with `npm`  
 ```bash
 npm install --save moment-timezone
@@ -34,16 +35,15 @@ A date constructed without an explicit time zone depends on where the date is be
 
 ### On the Server  
 + always either using UTC  
-+ explicitly specifying the time zone  
-demo as `moment-date.js`  
++ explicitly specifying the time zone (demo as `moment-date.js`)  
 
 ### In the Browser
 JS's default behavior is appropriate
 
 ## Transmitting Dates  
-+ JavaScript Date instances store the date as a numeric offset from the UTC, Unix Epoch, it's generally safe to pass Date objects back and forth  
++ JavaScript `Date` instances store the date as a numeric offset from the UTC, Unix Epoch, it's generally safe to pass Date objects back and forth  
 + 2 ways  
-  - using JSON (see `transmission.js`) 
+  - using JSON (see `transmission1.js`) 
   - use the numeric value of the date (see `transmission2.js`)  
 
 ## Displaying Dates  
@@ -53,7 +53,7 @@ using the `format()` by `Moment.js` (see `moment-fmt.js`)
 year, month, day, .... (see `components.js`)  
 
 ## Comparing Dates  
-use JavaScript's built-in comparison operators  
+use JavaScript's built-in comparison operators (demo as `cmp.js`)  
 
 ## Date Arithmetic  
 substraction, addition, etc. (see `arithmetics.js` and `arithmetics-moment.js`)  

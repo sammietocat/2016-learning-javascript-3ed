@@ -3,7 +3,6 @@ const moment = require('moment');
 const d = new Date(Date.UTC(1930, 4, 10));
 // these show output for someone in Asia/Shanghai 
 console.log(d.toLocaleDateString()); // "1930-5-10"
-// d.toLocaleFormat(); // "5/9/1930 4:00:00 PM"
 
 console.log(d.toLocaleTimeString()); // 08:00:00
 console.log(d.toTimeString()); // 08:00:00 GMT+0800 (CST)
