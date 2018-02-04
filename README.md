@@ -19,7 +19,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter 13. Functions and the Power of Abstract Thinking](chapter13/README.md)  
 + [Chapter 14. Asynchronous Programming](chapter14/README.md)  
 + [Chapter 15. Date and Time](chapter15/README.md)   
-+ [Chapter16. Math](chapter16-math/README.md)  
++ [Chapter 16. Math](chapter16/README.md)  
 + [Chapter17. Regular Expressions](chapter17-regex/README.md)  
 + [Chapter18. JavaScript in the Browser](chapter18-js-in-browser/README.md)  
 + [Chapter19. jQuery](chapter19-jquery/README.md)  
