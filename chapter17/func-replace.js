@@ -26,7 +26,9 @@ function sanitizeATag(aTag) {
 }
 
 const out1 = html.match(/<a .*?>(.*?)<\/a>/ig);
+console.log('***out1***');
 console.log(out1);
+console.log('---out1---');
 
 html.replace(/<a .*?>(.*?)<\/a>/ig, function (m, g1, offset) {
   console.log(`<a> tag found at ${offset}. contents: ${g1}`);
@@ -35,7 +37,11 @@ html.replace(/<a .*?>(.*?)<\/a>/ig, function (m, g1, offset) {
 const out2 = html.replace(/<a .*?<\/a>/ig, function (m) {
   return sanitizeATag(m);
 });
+console.log('***out2***');
 console.log(out2);
+console.log('---out2---');
 
 const out3 = html.replace(/<a .*?<\/a>/ig, sanitizeATag);
+console.log('***out3***');
 console.log(out3);
+console.log('---out3---');

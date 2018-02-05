@@ -1,4 +1,4 @@
-# Chapter 17. Substring Matching and Replacing  
+# Chapter 17.Regular Expressions  
 
 **Regular Expression** is abbreviated as **regex**, whose essential job is to match a substring within a string, and optionally replace it 
 
@@ -48,7 +48,7 @@ see `replace.js`
 + `i` signifies to ignore case  
 + `g` signals global search. Without the `g`, only the first match would be returned  
 
-(see `alter.js`)  
+(see `alternation.js`)  
 
 ## Matching HTML  
 + regexes cannot parse HTML  
@@ -62,14 +62,14 @@ see `replace.js`
 
 ## Named Character Sets  
 
-character | equivalent  | description
----------:|:-----------:|:-----------
-`\d`  | `[0-9]`         | 
-`\D`  | `[^0-9]`        | 
-`\s`  | `[ \t\v\n\r]`   |   Includes tabs, spaces, and vertical tabs.
-`\S`  | `[^ \t\v\n\r]`  | 
-`\w`  |  `[a-zA-Z_]`    | Note that dashes and periods are not included in this, making it unsuitable for things like domain names and CSS classes.
-`\W`  | `[^a-zA-Z_]`    | 
+character | equivalent      | description
+---------:|:---------------:|:-----------
+`\d`      | `[0-9]`         | 
+`\D`      | `[^0-9]`        | 
+`\s`      | `[ \t\v\n\r]`   | includes tabs, spaces, and vertical tabs.
+`\S`      | `[^ \t\v\n\r]`  | 
+`\w`      |  `[a-zA-Z_]`    | unsuitable for things like domain names and CSS classes
+`\W`      | `[^a-zA-Z_]`    | 
 
 The negated character classes can be used to normalize phone numbers, etc
 
@@ -77,15 +77,15 @@ The negated character classes can be used to normalize phone numbers, etc
 
 repetition modifier | description 
 -------------------:|:-----------
-`{n}`       | Exactly `n`
-`{n,}`      | At least `n`
-`{n, m}`    | At least `n`, at most `m`
-`?`         | Zero or one. Equivalent to `{0,1}`
-`*`         | Zero or more (sometimes called a "Klene star" or "Klene closure")
-`+`         | One or more
+`{n}`               | Exactly `n`
+`{n,}`              | At least `n`
+`{n, m}`            | At least `n`, at most `m`
+`?`                 | Zero or one. Equivalent to `{0,1}`
+`*`                 | Zero or more (sometimes called a "Klene star" or "Klene closure")
+`+`                 | One or more
 
 ## The Period Metacharacter and Escaping  
-+ the period is a special character that means "match anything" (except new‐ lines)  
++ the period is a special character that means "match anything" (except newlines)  
 + to escape any special regex character, simply prefix it with a backslash  
 
 (see `period-escaping.js`)  
@@ -95,18 +95,18 @@ match any character including newlines: `[sS]`
 
 ## Grouping  
 + Grouping allows us to construct *subexpressions*, which can then be treated like a single unit  
-+ noncapturing groups is suitable for no need for group results  
-+ Groups are specified by *parentheses*, and noncapturing groups look like `(?:<subexpression>)`  
-+ Another advantage of groups is that you can apply repetition to them 
-
-(see `grouping2.js`)  
++ Noncapturing groups is suitable for no need of group results  
++ Groups are specified by *parentheses*, and noncapturing groups look like `(?:<subexpression>)` (demo as `grouping1.js`)    
++ Another advantage of groups is that you can apply repetition to them (demo as `grouping2.js`)  
 
 ## Lazy Matches, Greedy Matches  
 + Regular expressions, by default, are **greedy**, meaning they will match as much as possible before stopping  
 
-## Backreferences [DNW]   
+## Backreferences    
 + Each group (including subgroups) in a regex is assigned a number, from left to right, starting with 1  
 + Use case: match quotation marks  
+
+> all capturing groups are assigned a number starting with 1  
 
 see `backref.js`  
 
@@ -119,7 +119,7 @@ symbol | meaning
 **$'** | everything after the match
 **$$** | the literal `$`
 
-see `replace-groups.js`, `replace-groups2.js`,`replace-groups3.js`
+see `replace-groups1.js`, `replace-groups2.js`,`replace-groups3.js`
 
 ## Function Replacements  
 + pass a function `f` to `String.prototype.replace` as the replacement parameter, which allows you to take special action for each replacement, where signature of `f` goes as  
@@ -140,7 +140,7 @@ anchor | meaning
 `^`    | matches the beginning of the line 
 `$`    | matches the end of the line  
 
-demo as `anchor.js` 
+demo as `anchor1.js` 
 
 > If you want to treat a string as **multiline** (as separated by newlines), you need to use the `m` (multiline) option (see `anchor2.js`)  
 
@@ -161,5 +161,3 @@ see `lookaheads.js`
 
 ## Constructing Regexes Dynamically  
 `RegExp` is ok, but not regex literal (see `dyn-regex.js`)  
-
-

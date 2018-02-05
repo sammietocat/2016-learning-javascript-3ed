@@ -1,4 +1,5 @@
 const input = "As I was going to Saint Ives";
+
 console.log(input.startsWith("As")); // true 
 console.log(input.endsWith("Ives")); // true 
 console.log(input.startsWith("going", 9)); // true -- start at index 9
