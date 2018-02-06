@@ -1,4 +1,4 @@
-# Chapter 17.Regular Expressions  
+# Chapter 17. Regular Expressions  
 
 **Regular Expression** is abbreviated as **regex**, whose essential job is to match a substring within a string, and optionally replace it 
 

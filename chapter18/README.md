@@ -21,9 +21,9 @@
 + An **ancestor** is used to refer to a parent, the parent's parent, and so on
 
 ## DOM "Get" Methods  
-method | usage 
-------:|:-----
-`document.getElementById()` |  retrieve an element by its ID
+method                              | usage 
+-----------------------------------:|:---------------------------------------------------------------
+`document.getElementById()`         |  retrieve an element by its ID
 `document.getElementsByClassName()` | returns a collection of elements that have the given class name 
 `document.getElementsByTagName()`   | returns a collection of elements that have the given tag name
 
@@ -44,7 +44,7 @@ method | usage
 + Each element has two properties for changing the element's content  
     - `textContent`: strips out all HTML tags and provides text data only    
     - `innerHTML`: allows you to create HTML making new DOM nodes  
-+  Assigning to textContent and innerHTML is **a destructive operation**  
++  Assigning to `textContent` and `innerHTML` is **a destructive operation**  
 
 (demo as `man-dom.html`)  
 

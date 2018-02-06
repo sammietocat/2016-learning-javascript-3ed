@@ -21,7 +21,7 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter 15. Date and Time](chapter15/README.md)   
 + [Chapter 16. Math](chapter16/README.md)  
 + [Chapter 17. Regular Expressions](chapter17/README.md)  
-+ [Chapter18. JavaScript in the Browser](chapter18-js-in-browser/README.md)  
++ [Chapter 18. JavaScript in the Browser](chapter18/README.md)  
 + [Chapter19. jQuery](chapter19-jquery/README.md)  
 + [Chapter20. Node](chapter20-node/README.md)  
 + [Chapter21. Object Property Configuration and Proxies](chapter21-obj-prop-config-and-proxy/README.md)  
