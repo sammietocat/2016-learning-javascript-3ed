@@ -11,32 +11,34 @@
   - computed property names allowing nonidentifiers and symbols  
   - method shorthand  
 + properties have **attributes** that control how the properties behave in the context of the object they belong to  
-  - `Object.getOwnPropertyDescriptor` exposes the three attributes of a property  
+  - `Object.getOwnPropertyDescriptor` exposes the three attributes of a property (demo as `prop-desc.js`)    
     + **Writable**: Controls whether the value of the property can be changed  
-    + **Enumerable**: Controls whether the property will be included when the properties of the object are enumerated (with `for...in`, `Object.keys`, or the spread operator)  
+    + **Enumerable**: Controls whether the property will be included when the properties of the object are enumerated (with `for...in`, `Object.keys`, or the spread operator) (demo as `nonenumerable-arr.js`)   
     + **Configurable**: Controls whether the property can be deleted from the object or have its attributes modified  
-+ property attributes can be controlled with `Object.defineProperty`, which allows you to create new properties or modify existing ones (as long as the property is *configurable*) (demo as `def-props.js`) 
++ property attributes can be controlled with `Object.defineProperty`, which allows you to create new properties or modify existing ones (as long as the property is *configurable*) (demo as `def-props1.js`) 
 >  Attempting to set a read-only property will **only result in an error in strict mode**  
 + `Object.defineProperty` can be used to add a new property to an object. This is especially useful for attribute properties, liking adding an accessor property after an object has been created (demo as `def-props2.js`)   
 + To create a data property, you provide the `value` property to `Object.defineProperty` (demo as `def-props3.js`)  
-+ One common use of Object.defineProperty is making properties not enumerable in an array  
++ One common use of `Object.defineProperty` is making properties not enumerable in an array  
 
 ## Protecting Objects: Freezing, Sealing, and Preventing Extension  
 
 Object protection options go as  
 
-action | normal object | frozen object | sealed object | nonextensible object 
--------|---------------|---------------|---------------|---------------------
-Add property  | Allowed   | Prevented  | Prevented     | Prevented 
-Read property | Allowed   | Allowed    | Allowed       | Allowed
-Set property value  | Allowed | Prevented | Allowed    | Allowed
-Reconfigure property| Allowed | Prevented | Prevented| Allowed 
-Delete property     | Allowed   | Prevented | Prevented| Allowed 
-check | N/A   | `Object.isFrozen()`   | `Object.isSealed()` | `Object.isExtensible()`
+action              | normal    | frozen              | sealed              | nonextensible 
+--------------------|-----------|---------------------|---------------------|------------------------
+Add property        | Allowed   | Prevented           | Prevented           | Prevented 
+Read property       | Allowed   | Allowed             | Allowed             | Allowed
+Set property value  | Allowed   | Prevented           | Allowed             | Allowed
+Reconfigure property| Allowed   | Prevented           | Prevented           | Allowed 
+Delete property     | Allowed   | Prevented           | Prevented           | Allowed 
+Check               | N/A       | `Object.isFrozen()` | `Object.isSealed()` | `Object.isExtensible()`
+
+(demo as `freeze.js`,`seal.js` and `extend.js`)
 
 ## Proxies  
 > **DEF**: An object proxy essentially has the ability to intercept and (optionally) modify actions on an object  
 
 + implemented by `Proxy(target,handler)`  
   - `target` is the object to proxy  
-  - `handler` is the action to intercept (e.g. `get` for property access, `set` for property setting)  
+  - `handler` is the action to intercept (e.g. `get` for property access as `proxy-get.js`, `set` for property setting as `proxy-set.js`)  
