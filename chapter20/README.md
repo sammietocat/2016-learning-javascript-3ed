@@ -25,7 +25,7 @@ npm | file modules that are located in a special directory called `node_modules`
 
 ### npm modules  
 + If you require some module `x` (where x is not a core module), Node will
-look in the current directory for a subdirectory called `node_modules`. If it finds it, it will look for `x` in that directory. Otherwise, it will go up level by level until finding the module or reaches the root  
+look in the current directory for a subdirectory called `node_modules`. If it finds it, it will look for `x` in that directory. Otherwise, it will go up level by level until finding the module or reaching the root  
 + For most projects, you'll have a single `node_modules` directory in the application root  
 + things should be added or removed by `npm` only   
 + don't put user-defined modules in `node_modules` directory    
@@ -39,49 +39,49 @@ look in the current directory for a subdirectory called `node_modules`. If it fi
 method | description  
 ------:|:-----------
 `fs.writeFile`  | create a file in current working directory (see `fs-access/app.js`). The default string encoding is **UTF-8** (a Unicode encoding)
-`path.join`     | join directory elements using whatever directory separator is appropriate for the operating system (demo as `fs-access/app2.js`)  
-`fs.readFile`   | read the content of a file (demo as `fs-access/app-read.js` and `fs-access/app-read2.js`). If the encoding is unspecified, it will return a buffer containing raw binary data
-`fs.readdir`    | list the files in a directory (demo as `ls.js`) 
+`path.join`     | join directory elements using whatever directory separator is appropriate for the operating system (demo as `fs-access/dirname-demo/app2.js`)  
+`fs.readFile`   | read the content of a file (demo as `fs-access/read{1,2}.js`). If the encoding is unspecified, it will return a buffer containing raw binary data
+`fs.readdir`    | list the files in a directory (demo as `readdir.js`) 
 `fs.unlink`     | delete files
 `fs.rename`     | rename files
 `fs.stat`       | get information about files 
 
-> + variable `__dirname` is always set to the directory in which the source file resides (demo as `fs-access/app2.js`)  
+> + variable `__dirname` is always set to the directory in which the source file resides (demo as `fs-access/dirname-demo/app2.js`)  
 > + All of the functions in `fs` have synchronous equivalents (that end in "Sync"), and error handling is accomplished with exceptions for these synchronous versions
 
 ## Process 
 + Every running Node program has access to a variable called `process` that allows it to get information about and control its own execution  
 + calling `process.exit([exitCode])` in case of fatal errors, where `exitCode` as 0 means **no error**, and indicates an error otherwise   
-+ The command-line arguments passed to the running programm are contained in the `process.argv` array (demo as `proc/app2.js`), where  
++ The command-line arguments passed to the running programm are contained in the `process.argv` array (demo as `proc/linecount{1,2}.js`), where  
   - the 1st element is the interpreter  
   - the 2nd element is the full path to the script being executed  
   - the remainings are parameters 
-+ `process.env` helps to access to environment variables  
++ `process.env` helps to access to environment variables (demo `debug.js`)    
 
 > Environment variables are named system variables that are primarily used
 for command-line programs. Environment variables are often used to configure the behavior of some aspect of your program (without your having to provide the values on the command line every time you execute the program).
 
-+ `process.cwd` tells you what the current working directory is, and `process.chdir` allows you to change it (demo as `dir/app.js`)  
++ `process.cwd` tells you what the current working directory is, and `process.chdir` allows you to change it (demo as `proc/dir/app.js`)  
 
 ## Operating System  
-The `os` module provides some platform-specific information about the computer on which the app is running 
+The `os` module provides some platform-specific information about the computer on which the app is running (demo as `os.js`)
 
 ## Child Processes  
 + The `child_process` module allows your app to run other programs  
-+ 2 primary functions  
++ 3 primary functions  
 
-function  | description 
----------:|:-----------
-`exec`    | invokes a *shell* => can run any commands available in shells (demo as `exec.js`)
+function    | description 
+-----------:|:-----------
+`exec`      | invokes a *shell* => can run any commands available in shells (demo as `exec.js`)
 `execFile`  |  runs an executable  
-`fork`    | execute other Node scripts 
+`fork`      | execute other Node scripts 
 
 ## Streams   
 > **DEF**: A stream is an object that deals with data, as the name implies, in a stream
 
 + 3 types of streams  
-  - read streams  
-  - write streams 
+  - read streams (demo as `rs.js`)  
+  - write streams (demo as `ws.js`) 
   - duplex streams  
 + examples are  
   - user-typing at keyboard  
@@ -106,6 +106,7 @@ function  | description
   - `IncomingMessage` object (often abbreviated req): contains all information about the HTTP request  
   - `ServerRequest` object (often abbreviated res): contains properties and methods to control the response that will be sent back to the client (usually a browser)
 
+(demo as `web/app{1,2}.js`)  
 
 
 

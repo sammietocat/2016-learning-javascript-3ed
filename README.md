@@ -23,5 +23,5 @@ This repository serves to hosting source codes for examples in book [Learning Ja
 + [Chapter 17. Regular Expressions](chapter17/README.md)  
 + [Chapter 18. JavaScript in the Browser](chapter18/README.md)  
 + [Chapter 19. jQuery](chapter19/README.md)  
-+ [Chapter20. Node](chapter20-node/README.md)  
-+ [Chapter21. Object Property Configuration and Proxies](chapter21-obj-prop-config-and-proxy/README.md)  
++ [Chapter 20. Node](chapter20/README.md)  
++ [Chapter 21. Object Property Configuration and Proxies](chapter21/README.md)  
